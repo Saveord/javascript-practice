@@ -1,46 +1,46 @@
 "use strict";
 
-// // create empty object
-// let user = {};
+// create empty object
+let user = {};
 
-// // add properties
-// user.name = "John";
-// user.surname = "Smith";
+// add properties
+user.name = "John";
+user.surname = "Smith";
 
-// alert(user.name);
+alert(user.name);
 
-// // change name value
-// user.name = "Pete";
-// alert(user.name);
+// change name value
+user.name = "Pete";
+alert(user.name);
 
-// // shows that username is undefined
-// // after deletion
-// delete user.name;
-// alert(user.name);
+// shows that username is undefined
+// after deletion
+delete user.name;
+alert(user.name);
 
-// // create object isEmpty function
-// function isEmpty(obj) {
-//     for (let key in user) {
-//         return false;
-//     }
-//     return true;
-// }
+// create object isEmpty function
+function isEmpty(obj) {
+    for (let key in obj) {
+        return false;
+    }
+    return true;
+}
 
-// alert(isEmpty(user));
+alert(isEmpty(user));
 
-// // sum up all object properties
-// let salaries = {
-//     John: 100,
-//     Ann: 160,
-//     Pete: 130
-// };
+// sum up all object properties
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+};
 
-// let sum = 0;
-// for (let key in salaries) {
-//     sum += salaries[key];
-// }
+let sum = 0;
+for (let key in salaries) {
+    sum += salaries[key];
+}
 
-// alert(sum);
+alert(sum);
 
 /* 
  create a function that
