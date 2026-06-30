@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function readNumber() {
+            let value;
+
+            while (true) {
+                value = prompt("Enter number");
+                
+                //checks for CANCEL and empty string
+                if (value == null || value == "") {
+                    return null;
+                }
+
+                if (isFinite(+value)) {
+                    return value;
+                }
+            }
+        }
+
+        alert(readNumber());
+    </script>
+</body>
+</html>
